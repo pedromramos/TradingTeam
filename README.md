@@ -3,7 +3,7 @@
 
 
 
-  ![Tranding team UML](https://github.com/pedromramos/TradingTeam/blob/main/image.png)
+  ![alt text](./readme_assets/image.png)
 
 
 
@@ -54,3 +54,18 @@
 
 
 
+
+
+# Bara executar os agentes, em ambiente windows.
+
+1- baixar esse repositório
+2- dentro da pasta do projeto, criar um arquivo com o nome .env
+3- no arquivo .env, adicionar as configurações abaixo, substituindo as chaves pelas chaves corretas
+
+```
+
+OPENAI_API_KEY=sk-pr....gA
+FINANCIAL_DATASETS_API_KEY=9a245e...766255
+```
+
+4- Executar o programa pelo atalho ExcecutarAgentes
