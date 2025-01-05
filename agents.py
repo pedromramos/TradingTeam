@@ -17,6 +17,9 @@ from langchain_core.output_parsers import JsonOutputParser
 from pydantic import BaseModel, Field
 from typing import Literal
 
+from load_env import load_env
+
+load_env()
 
 llm = ChatOpenAI(model="gpt-4o")
 
@@ -383,8 +386,9 @@ class Backtester:
             self.portfolio["portfolio_value"] = total_value
 
             # Log the current state with executed quantity
+            time_string = tiker_real_time_data.iloc[-1]["time"]
             print(
-                f"{tiker_real_time_data.iloc[-1]["time"]:<24} {action:<6} {executed_quantity:>8} {current_price:>14.2f} {tiker_real_time_data.iloc[-1]["day_change"]:>12.2f} "
+                f"{datetime.datetime.strptime(time_string, '%Y-%m-%dT%H:%M:%SZ').strftime("%Y-%m-%d %H:%M:%S"):<24} {action:<6} {executed_quantity:>8} {current_price:>14.2f} {tiker_real_time_data.iloc[-1]["day_change"]:>12.2f} "
                 f"{tiker_real_time_data.iloc[-1]["day_change_percent"]:>16.2f} {self.portfolio['cash']:>22.2f} {self.portfolio['stock']:>8} {total_value:>12.2f}"
             )
 
