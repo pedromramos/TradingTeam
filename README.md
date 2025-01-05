@@ -3,7 +3,7 @@
 
 
 
-  ![alt text](./readme_assets/image.png)
+  ![Tranding team UML]([./readme_assets/image.png](https://github.com/pedromramos/TradingTeam/blob/main/image.png))
 
 
 
