@@ -58,11 +58,8 @@
 # Bara executar os agentes, em ambiente windows.
 
 1- baixar esse repositório
-2- dentro da pasta do projeto, criar um arquivo com o nome .env
-3- no arquivo .env, adicionar as configurações abaixo, substituindo as chaves pelas chaves corretas
-
+2- dentro da pasta do projeto, duplo clique no arquivo create_env, no arquivo ".env" que foi criado, adicionar as chaves de api como no exemplo abaixo:
 ```
-
 OPENAI_API_KEY=sk-pr....gA
 FINANCIAL_DATASETS_API_KEY=9a245e...766255
 ```
