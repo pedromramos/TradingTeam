@@ -3,8 +3,7 @@
 
 
 
-  ![alt text](./readme_assets/image.png)
-
+ ![Tranding team UML](https://github.com/pedromramos/TradingTeam/blob/main/image.png)
 
 
 - **Classe Principal: `Backtester`**
